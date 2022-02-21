@@ -42,6 +42,7 @@ action          = iptables-allports
 
 Useful commands:
 ```
+systemctl status fail2ban.service
 fail2ban-client reload
 fail2ban-client status 
 ```
