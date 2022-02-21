@@ -1,5 +1,5 @@
 vim /etc/fail2ban/jail.local
-
+```
 [dovecot]
 
 enabled         = true
@@ -35,3 +35,4 @@ maxretry        = 3
 findtime        = 1200
 bantime         = 21600
 action          = iptables-allports
+```
