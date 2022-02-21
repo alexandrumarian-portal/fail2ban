@@ -1,5 +1,8 @@
-vim /etc/fail2ban/jail.local
+Configure the Postfix, Dovecot, Roundcube jails : 
+
 ```
+vim /etc/fail2ban/jail.local
+
 [dovecot]
 
 enabled         = true
@@ -35,4 +38,10 @@ maxretry        = 3
 findtime        = 1200
 bantime         = 21600
 action          = iptables-allports
+```
+
+Useful commands:
+```
+fail2ban-client reload
+fail2ban-client status 
 ```
